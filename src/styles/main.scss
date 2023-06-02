@@ -2,9 +2,10 @@
     $black:  #010101; 
     $font-inter: 'Inter', sans-serif;
 
-    
+   
     body {
     background-color: #F3F2F0;
+     font-family: 'Inter', sans-serif;
     }
     a {
         text-decoration: none;
@@ -12,6 +13,9 @@
     }
     ul {
         list-style-type: none;
+    }
+    p {
+       
     }
 
     .header {
@@ -33,7 +37,7 @@
         
        &__link {
         font-family: 'Inter', sans-serif;
-        font-size: 14px;
+       
        }
        &__infolink {
         font-family: 'Inter', sans-serif;
@@ -41,6 +45,8 @@
         gap: 26px;
        }
     }
+    
+   
     .box {
         width: 1295px;
         height: 758px;
@@ -61,8 +67,8 @@
         &__article {
             font-size: 74px;
             font-weight: 700;
-            margin-top: 33px;
-            margin-bottom: 86px;
+            margin-top: 0;
+            margin-bottom: 81px;
         }
         &__title {
             font-size: 16px;
@@ -83,25 +89,69 @@
             font-size: 16px;
             
         }
-        
-
         &__skills {
             display: flex;
             gap: 31px;
-            padding-top: 45px;
+            padding-top: 32px;
             padding-left: 0;
-
-        }
-        &__heading {
-            font-weight: 700;
-            font-size: 16px;
             
         }
-        &__description {
+   
+        &__options {
+            font-weight: 700;
+            font-size: 16px;    
+        }
+
+        &__about {
+            margin-top: 161px;
+            display: flex;
+            border-bottom: 2px solid #010101;
+            padding-bottom: 80px;
+           }
+           &__text {
+            flex-basis: 125%;
+           }   
+    }
+    .description {
+        &_size-s {
             font-weight: 400;
             font-size: 14px;
         }
+        &_size-m {
+            font-size: 28px;
+        }
+        &_size-l {
+            font-size: 16px;
+        }
+    }    
+    .grid {
+        width: 560px;
+        height: 274px;
+        margin-left: 539px;
+        margin-bottom: 56px;
+        margin-top: 54px;
+        &__content {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        
     }
-    
-
+    .steps {
+        display: flex;
+        gap: 168px;
+        margin-left: 127px;
+        border-bottom: 2px solid #010101;
+        border-top: 2px solid #010101;
+        &__object {
+            display: flex;  
+        }
+        &__subject {
+       line-height: 3.5;
+        }
+        &__plan {
+        line-height: 6.2;
+      
+        }
+    }
     
