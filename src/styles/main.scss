@@ -1,8 +1,107 @@
-$orange: #d26a22;
-body {
-    background-color:  $orange;
-}
-h1 {
-    font-size: 70px;
-    color: red;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+    $black:  #010101; 
+    $font-inter: 'Inter', sans-serif;
+
+    
+    body {
+    background-color: #F3F2F0;
+    }
+    a {
+        text-decoration: none;
+        color:  #010101;
+    }
+    ul {
+        list-style-type: none;
+    }
+
+    .header {
+        max-width: 1140px;
+        margin: 0 auto;
+        margin-top: 40px;
+        margin-bottom: 59px;
+        margin-left: 400px;
+        display: flex;
+        justify-content: space-between;
+        flex-basis: 526px;
+        
+        &__nav {
+            display: flex;
+            margin: 0;
+            padding-left: 0;
+            gap: 20px;
+        }
+        
+       &__link {
+        font-family: 'Inter', sans-serif;
+        font-size: 14px;
+       }
+       &__infolink {
+        font-family: 'Inter', sans-serif;
+        display: flex;
+        gap: 26px;
+       }
+    }
+    .box {
+        width: 1295px;
+        height: 758px;
+        margin-left: 235px;
+        &__block{
+            margin-left: 170px;
+            font-family: 'Inter', sans-serif;
+        }
+        &__bg{
+            width: 1140px;
+            background-repeat: no-repeat; 
+        }
+        &__name {
+            font-size: 28px;
+            font-weight: 400;
+            margin-top: 93px;
+        }
+        &__article {
+            font-size: 74px;
+            font-weight: 700;
+            margin-top: 33px;
+            margin-bottom: 86px;
+        }
+        &__title {
+            font-size: 16px;
+            font-weight: 700; 
+        }
+        &__button {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 2px solid #010101;
+        padding-bottom: 46px;
+        }
+        &__network {
+            display: flex;
+            gap: 56px; 
+            
+        }
+        &__link {
+            font-size: 16px;
+            
+        }
+        
+
+        &__skills {
+            display: flex;
+            gap: 31px;
+            padding-top: 45px;
+            padding-left: 0;
+
+        }
+        &__heading {
+            font-weight: 700;
+            font-size: 16px;
+            
+        }
+        &__description {
+            font-weight: 400;
+            font-size: 14px;
+        }
+    }
+    
+
+    
