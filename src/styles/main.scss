@@ -14,10 +14,7 @@
     ul {
         list-style-type: none;
     }
-    p {
-       
-    }
-
+    
     .header {
         max-width: 1140px;
         margin: 0 auto;
@@ -46,11 +43,12 @@
        }
     }
     
-   
+        .container {
+         width: 1295px;
+         margin-left: 235px;
+   }
     .box {
-        width: 1295px;
-        height: 758px;
-        margin-left: 235px;
+       
         &__block{
             margin-left: 170px;
             font-family: 'Inter', sans-serif;
@@ -154,4 +152,49 @@
       
         }
     }
+    .portfolio {
+        position: relative;
+        &__type {
+            font-size: 74px;
+            font-weight: 700;
+            margin-top: 180px;
+            margin-left: 166px;
+        }
+        &__ellipse {
+            position: absolute;
+            left: 39%;
+            top: -99%;
+            z-index: -1;
+            
+        }
+    }
+   .wrapper {
+    &__first, &__second {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 224px;
+        margin-left: 170px;
+        border-bottom: 2px solid #010101;
+        padding-bottom: 37px;
+}
+
+    &__second {
+        margin-top: 82px;
+   } 
+    &__name {
+    margin-bottom: 18px;
+}
+    &__list {
+    line-height: 3;
+    padding-left: 0;
+    ::before {
+        content: '-';
+        left: -5px;
+    }
+}
+    &__gym, &__shop {
+        width: 560px;
+        height: 315px;
+    }
+   }
     
