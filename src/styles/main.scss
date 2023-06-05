@@ -1,200 +1,274 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-    $black:  #010101; 
-    $font-inter: 'Inter', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+$black: #010101;
+$font-inter: "Inter", sans-serif;
 
-   
-    body {
-    background-color: #F3F2F0;
-     font-family: 'Inter', sans-serif;
-    }
-    a {
-        text-decoration: none;
-        color:  #010101;
-    }
-    ul {
-        list-style-type: none;
-    }
-    
-    .header {
-        max-width: 1140px;
-        margin: 0 auto;
-        margin-top: 40px;
-        margin-bottom: 59px;
-        margin-left: 400px;
-        display: flex;
-        justify-content: space-between;
-        flex-basis: 526px;
-        
-        &__nav {
-            display: flex;
-            margin: 0;
-            padding-left: 0;
-            gap: 20px;
-        }
-        
-       &__link {
-        font-family: 'Inter', sans-serif;
-       
-       }
-       &__infolink {
-        font-family: 'Inter', sans-serif;
-        display: flex;
-        gap: 26px;
-       }
-    }
-    
-        .container {
-         width: 1295px;
-         margin-left: 235px;
-   }
-    .box {
-       
-        &__block{
-            margin-left: 170px;
-            font-family: 'Inter', sans-serif;
-        }
-        &__bg{
-            width: 1140px;
-            background-repeat: no-repeat; 
-        }
-        &__name {
-            font-size: 28px;
-            font-weight: 400;
-            margin-top: 93px;
-        }
-        &__article {
-            font-size: 74px;
-            font-weight: 700;
-            margin-top: 0;
-            margin-bottom: 81px;
-        }
-        &__title {
-            font-size: 16px;
-            font-weight: 700; 
-        }
-        &__button {
-        display: flex;
-        justify-content: space-between;
-        border-bottom: 2px solid #010101;
-        padding-bottom: 46px;
-        }
-        &__network {
-            display: flex;
-            gap: 56px; 
-            
-        }
-        &__link {
-            font-size: 16px;
-            
-        }
-        &__skills {
-            display: flex;
-            gap: 31px;
-            padding-top: 32px;
-            padding-left: 0;
-            
-        }
-   
-        &__options {
-            font-weight: 700;
-            font-size: 16px;    
-        }
-
-        &__about {
-            margin-top: 161px;
-            display: flex;
-            border-bottom: 2px solid #010101;
-            padding-bottom: 80px;
-           }
-           &__text {
-            flex-basis: 125%;
-           }   
-    }
-    .description {
-        &_size-s {
-            font-weight: 400;
-            font-size: 14px;
-        }
-        &_size-m {
-            font-size: 28px;
-        }
-        &_size-l {
-            font-size: 16px;
-        }
-    }    
-    .grid {
-        width: 560px;
-        height: 274px;
-        margin-left: 539px;
-        margin-bottom: 56px;
-        margin-top: 54px;
-        &__content {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-        }
-        
-    }
-    .steps {
-        display: flex;
-        gap: 168px;
-        margin-left: 127px;
-        border-bottom: 2px solid #010101;
-        border-top: 2px solid #010101;
-        &__object {
-            display: flex;  
-        }
-        &__subject {
-       line-height: 3.5;
-        }
-        &__plan {
-        line-height: 6.2;
-      
-        }
-    }
-    .portfolio {
-        position: relative;
-        &__type {
-            font-size: 74px;
-            font-weight: 700;
-            margin-top: 180px;
-            margin-left: 166px;
-        }
-        &__ellipse {
-            position: absolute;
-            left: 39%;
-            top: -99%;
-            z-index: -1;
-            
-        }
-    }
-   .wrapper {
-    &__first, &__second {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 224px;
-        margin-left: 170px;
-        border-bottom: 2px solid #010101;
-        padding-bottom: 37px;
+body {
+  background-color: #f3f2f0;
+  font-family: "Inter", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #010101;
+}
+ul {
+  list-style-type: none;
 }
 
-    &__second {
-        margin-top: 82px;
-   } 
-    &__name {
+.header {
+  max-width: 1140px;
+  margin-top: 40px;
+  margin-bottom: 59px;
+
+  display: flex;
+  justify-content: space-between;
+
+  &__nav {
+    display: flex;
+    margin: 0;
+    padding-left: 0;
+    gap: 20px;
+  }
+
+  &__link {
+    font-family: "Inter", sans-serif;
+  }
+  &__infolink {
+    font-family: "Inter", sans-serif;
+    display: flex;
+    gap: 26px;
+  }
+}
+
+.container {
+  width: 1295px;
+  margin: 0 auto;
+}
+.box {
+  &__block {
+    font-family: "Inter", sans-serif;
+  }
+  &__bg {
+    width: 1140px;
+    background-repeat: no-repeat;
+  }
+  &__name {
+    font-size: 28px;
+    font-weight: 400;
+    margin-top: 93px;
+  }
+  &__article {
+    font-size: 74px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 81px;
+  }
+  &__title {
+    font-size: 16px;
+    font-weight: 700;
+  }
+  &__button {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #010101;
+    padding-bottom: 46px;
+  }
+  &__network {
+    display: flex;
+    gap: 56px;
+  }
+  &__link {
+    font-size: 16px;
+  }
+  &__skills {
+    display: flex;
+    gap: 31px;
+    padding-top: 32px;
+    padding-left: 0;
+  }
+
+  &__options {
+    font-weight: 700;
+    font-size: 16px;
+  }
+
+  &__about {
+    margin-top: 161px;
+    display: flex;
+    border-bottom: 2px solid #010101;
+    padding-bottom: 80px;
+  }
+  &__text {
+    flex-basis: 125%;
+  }
+}
+.description {
+  &_size-s {
+    font-weight: 400;
+    font-size: 14px;
+  }
+  &_size-m {
+    font-size: 28px;
+  }
+  &_size-l {
+    font-size: 16px;
+  }
+}
+.grid {
+  width: 560px;
+  height: 274px;
+
+  margin-bottom: 56px;
+  margin-top: 54px;
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+.steps {
+  display: flex;
+  gap: 168px;
+
+  border-bottom: 2px solid #010101;
+  border-top: 2px solid #010101;
+  &__object {
+    display: flex;
+  }
+  &__subject {
+    line-height: 3.5;
+  }
+  &__plan {
+    line-height: 6.2;
+  }
+}
+.portfolio {
+  position: relative;
+  &__type {
+    font-size: 74px;
+    font-weight: 700;
+    margin-top: 180px;
+  }
+  &__ellipse {
+    position: absolute;
+    left: 39%;
+    top: -99%;
+    z-index: -1;
+  }
+}
+.wrapper {
+  &__first,
+  &__second {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 224px;
+
+    border-bottom: 2px solid #010101;
+    padding-bottom: 37px;
+  }
+
+  &__second {
+    margin-top: 82px;
+  }
+  &__name {
     margin-bottom: 18px;
-}
-    &__list {
+  }
+  &__list {
     line-height: 3;
     padding-left: 0;
     ::before {
-        content: '-';
-        left: -5px;
+      content: "-";
+      left: -5px;
     }
+  }
+  &__gym,
+  &__shop {
+    width: 560px;
+    height: 315px;
+  }
+  &__prof {
+    border-bottom: 2px solid #010101;
+    padding-bottom: 46px;
+  }
+  &__description {
+    max-width: 853px;
+    margin-top: 180px;
+  }
 }
-    &__gym, &__shop {
-        width: 560px;
-        height: 315px;
+.catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  &__item {
+    display: flex;
+    gap: 40px;
+    margin-top: 80px;
+  }
+  &__options {
+    font-weight: 600;
+    font-size: 16px;
+  }
+  &__content {
+    max-width: 225px;
+    margin-top: -26px;
+  }
+}
+.table {
+  width: 100%;
+  background-color: #f3f2f0;
+  margin: 20px;
+  border-collapse: collapse;
+  text-align: center;
+  border-right: 1px solid black;
+  margin-top: 180px;
+
+  td {
+    border-left: 1px solid black;
+    width: 25%;
+  }
+  img {
+    opacity: 0.3;
+    transition: 2s;
+    transform: scale(1.05);
+    cursor: pointer;
+    &:hover {
+      opacity: 1;
     }
-   }
-    
+  }
+  &__node {
+    width: 106px;
+    height: 99px;
+  }
+  &__html5 {
+    width: 82px;
+    height: 87px;
+  }
+  &__css {
+    width: 77px;
+    height: 89px;
+  }
+  &__jS {
+    width: 82px;
+    height: 91px;
+  }
+  &__figma {
+    width: 151px;
+    height: 133px;
+  }
+  &__vs {
+    width: 143px;
+    height: 162px;
+  }
+  &__git {
+    width: 74px;
+    height: 74px;
+  }
+  &__sass {
+    width: 135px;
+    height: 102px;
+  }
+}
+.holder {
+  list-style-type: disc;
+  &__ text {
+    display: flex;
+  }
+}
